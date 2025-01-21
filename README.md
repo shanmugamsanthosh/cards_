@@ -26,6 +26,6 @@ This is a React-based application to display cards fetched from a mock API. It s
 
 ## Setup Instructions
 1. Navigate to the Desired Directory( cd path/to/your/directory)
-2. Clone the repository(git clone https://github.com/username/repository-name.git)
+2. Clone the repository(git clone [https://github.com/username/repository-name.git](https://github.com/shanmugamsanthosh/cards_.git))
 3. Install Dependencies(npm install)
 4. Start the Development Server(npm run dev)
