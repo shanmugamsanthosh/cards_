@@ -24,19 +24,19 @@ function ListCard() {
     const newId = cards.length > 0 ? Math.max(...cards.map((card) => card.id)) + 1 : 1;
     const newCard = { id: newId, title: `Card ${newId}`, description: "New card" };
 
-    setLoading(true); // Start loading
+    setLoading(true); 
     try {
       const response = await AddCards(newCard);
       setCards((prevCards) => [...prevCards, response.data]);
     } catch (error) {
       console.error("Error adding card:", error);
     } finally {
-      setLoading(false); // Stop loading
+      setLoading(false); 
     }
   };
 
   const handleDelete = async (id) => {
-    setLoading(true); // Start loading
+    setLoading(true); 
     try {
       await DeleteCards(id);
       setCards((prevCards) => prevCards.filter((card) => card.id !== id));
